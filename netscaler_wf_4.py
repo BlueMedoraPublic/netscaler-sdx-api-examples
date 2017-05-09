@@ -54,7 +54,7 @@ if __name__ == "__main__":
     print("Number of instances available for this license: " + str(license_count))
 
     endpoint = "nitro/v1/config/ns"
-    body = "object={'ns':{'ip_address':'10.66.8.90', 'name':'sdx-vpx-1', 'gateway':'10.66.8.47', 'network_interfaces':[{'port_name':'1/3'}], 'vm_memory_total':'2048' }}"
+    body = "object={'ns':{'ip_address':'10.66.8.90', 'name':'sdx-vpx-1', 'gateway':'10.66.8.47', 'network_interfaces':[{'port_name':'1/3'}], 'vm_memory_total':'2048', 'image_name':'NSVPX-XEN-11.1-53.11_nc.xva', 'provision_with_xva':true }}"
     response = client.post(endpoint, body)
     print("endpoint: " + endpoint)
     print(response)
