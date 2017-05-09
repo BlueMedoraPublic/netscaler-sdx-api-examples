@@ -6,7 +6,7 @@
 
 - install python 3 via your package manager or pyenv
 - create a virtual environment
-  - `pyenv vevn`
+  - `pyvenv venv`
 - activate the virtual environment
   - `source venv/bin/activate`
 - install dependencies
