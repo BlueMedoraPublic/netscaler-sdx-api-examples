@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     license_count = 0
     for sdx_license in response.json().get("sdx_license"):
-        license_count += int(sdx_license.get("max_number_of_instances"))
+        license_count += int(sdx_license.get("max_number_of_ns_instances"))
 
     print("Number of instances available for this license: " + str(license_count))
 
